@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Primary colors-->
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#009688</color>
+
+    <!--Background colors-->
+    <color name="color_premium_background">#ff3E4651</color>
+    <color name="color_property_list_background">#f1f1f1</color>
+    <color name="color_card_background">#ffffffff</color>
+    <color name="colorPhotosOverlay">#aa212121</color>
+
+    <!--Text/icon colors-->
+    <color name="colorWhite">#F7f7f7</color>
+    <color name="colorSecondaryTextWhite">#7fffffff</color>
+    <color name="colorText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+
+    <!--Divider line color-->
+    <color name="colorDivider">#e1e1e1</color>
+
+    <!--Ripple colors-->
+    <color name="colorRipple">#212121</color>
+
+
+</resources>

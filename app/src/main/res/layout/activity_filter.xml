@@ -1,0 +1,331 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleButton="http://schemas.android.com/apk/res-auto"
+    xmlns:IconicsImageView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <RadioGroup
+                    android:id="@+id/statusRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <!--Property Type ___________________________________________________________________-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/filter_property_type"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/typeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="start"
+                android:textAlignment="gravity"
+                android:textDirection="locale"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:prompt="@string/filter_property_type_hint" />
+
+            <!--Property Price ___________________________________________________________________-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/filter_price"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <Spinner
+                    android:id="@+id/minPriceSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:prompt="@string/filter_min_price" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="match_parent">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerInParent="true"
+                        IconicsImageView:iiv_color="@color/colorSecondaryText"
+                        IconicsImageView:iiv_icon="faw_minus" />
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/maxPriceSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:prompt="@string/filter_max_price" />
+            </LinearLayout>
+
+            <!--Rooms ____________________________________________________________________________-->
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="?android:attr/listDivider" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/filter_rooms"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/rooms_minus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    CircleButton:cb_color="@color/accent"
+                    CircleButton:cb_pressedRingWidth="8dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/roomIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        IconicsImageView:iiv_color="@color/colorText"
+                        IconicsImageView:iiv_icon="faw_bed" />
+
+                    <TextView
+                        android:id="@+id/rooms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:alpha="0.87"
+                        android:maxLength="3"
+                        android:selectAllOnFocus="true"
+                        android:text="@string/filter_any"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/rooms_plus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    CircleButton:cb_color="@color/accent"
+                    CircleButton:cb_pressedRingWidth="8dip" />
+
+            </RelativeLayout>
+
+            <!--Beds ____________________________________________________________________________-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/filter_beds"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/beds_minus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    CircleButton:cb_color="@color/accent"
+                    CircleButton:cb_pressedRingWidth="8dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/bedIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        IconicsImageView:iiv_color="@color/colorText"
+                        IconicsImageView:iiv_icon="faw_bed" />
+
+                    <TextView
+                        android:id="@+id/beds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:alpha="0.87"
+                        android:maxLength="3"
+                        android:selectAllOnFocus="true"
+                        android:text="@string/filter_any"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/beds_plus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    CircleButton:cb_color="@color/accent"
+                    CircleButton:cb_pressedRingWidth="8dip" />
+
+            </RelativeLayout>
+
+            <!--Baths ____________________________________________________________________________-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/filter_baths"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/baths_minus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    CircleButton:cb_color="@color/accent"
+                    CircleButton:cb_pressedRingWidth="8dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/bathIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        IconicsImageView:iiv_color="@color/colorText"
+                        IconicsImageView:iiv_icon="faw_bed" />
+
+                    <TextView
+                        android:id="@+id/baths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:alpha="0.87"
+                        android:maxLength="3"
+                        android:selectAllOnFocus="true"
+                        android:text="@string/filter_any"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/baths_plus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    CircleButton:cb_color="@color/accent"
+                    CircleButton:cb_pressedRingWidth="8dip" />
+
+            </RelativeLayout>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/searchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/filter_search" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

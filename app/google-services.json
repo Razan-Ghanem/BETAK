@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "xxxxxxxxxxxx",
+    "firebase_url": "https://wallpaperapp-xxxxx.firebaseio.com",
+    "project_id": "estate-xxxxxx",
+    "storage_bucket": "estate-xxxxx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194419444106:android:b54412f01136bf24",
+        "android_client_info": {
+          "package_name": "com.neurondigital.estate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "xxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

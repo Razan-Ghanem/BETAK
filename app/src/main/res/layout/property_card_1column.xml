@@ -1,0 +1,88 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.neurondigital.estate.AspectRatioImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY" />
+
+
+            <com.mikepenz.iconics.view.IconicsTextView
+                android:id="@+id/stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/gradient_bg"
+                android:padding="8dp"
+                android:gravity="start"
+                android:text="{faw-eye}"
+                android:textAlignment="gravity"
+                android:textDirection="locale"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/property_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_card_background"
+            android:gravity="start"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/property_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_card_background"
+            android:gravity="start"
+            android:paddingBottom="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/property_features"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:background="@color/color_card_background"
+            android:paddingBottom="16dp"
+            android:textAlignment="gravity"
+            android:paddingLeft="8dp"
+            android:textDirection="locale"
+            android:paddingRight="8dp"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

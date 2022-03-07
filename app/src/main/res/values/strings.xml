@@ -1,0 +1,158 @@
+<resources>
+    <!--
+    /**
+     * I have put a lot of effort to ensure that everything is working fine. If you find any problem
+     * feel free to contact me via the Codecanyon item's comment section or send me a personal
+     * message from here: https://codecanyon.net/user/neurondigital?ref=neurondigital#contact
+     *
+     * Thanks for buying this Template!
+     * Check out my other products on CodeCanyon: http://codecanyon.net/user/neurondigital/portfolio?ref=neurondigital
+     */
+    -->
+
+    <!-- General -->
+    <string name="app_name">BETAK</string>
+    <string name="currency">$</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_find_agent">Find Agent</string>
+    <string name="nav_info">Info</string>
+    <string name="nav_go_premium">Go Premium</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_categories_more">more</string>
+
+
+    <!-- Main Menu -->
+    <string name="menu_list">List View</string>
+    <string name="menu_map">Map View</string>
+
+
+    <!-- Search -->
+    <string name="search_title">BETAK</string>
+    <string name="search_hint">Property Keyword...</string>
+
+    <!-- Filter -->
+    <string name="filter_menu_clear">Clear</string>
+    <string name="filter_title">Filter</string>
+    <string name="filter_property_type">Property Type</string>
+    <string name="filter_property_type_hint">Property Type</string>
+    <string name="filter_price">Price</string>
+    <string name="filter_min_price">Min.</string>
+    <string name="filter_max_price">Max.</string>
+    <string name="filter_rooms">Rooms</string>
+    <string name="filter_beds">Beds</string>
+    <string name="filter_baths">Baths</string>
+    <string name="filter_any">Any</string>
+    <string name="filter_search">Search</string>
+
+
+    <!-- Categories screen -->
+    <string name="categories_page_title">Categories</string>
+
+
+    <!-- Agents -->
+    <string name="agents_title">Find Agent</string>
+    <string name="empty_agents">No Agents</string>
+
+
+    <!-- Favorites Screen -->
+    <string name="favorite_page_title">Favorite Properties</string>
+    <string name="empty_properties">No Properties</string>
+
+
+    <!-- Properties -->
+    <string name="property_page_title">Loading...</string>
+    <string name="rent_price">Rent - %1$s/month</string>
+    <string name="photos_count"> {faw-camera} %1$s photos</string>
+    <string name="beds">BEDS</string>
+    <string name="baths">BATHS</string>
+    <string name="rooms">ROOMS</string>
+    <string name="areaunits">SQ M</string>
+    <string name="description">Description</string>
+    <string name="features">Features</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="property_type_display">{faw-home}   Type:  %1$s</string>
+    <string name="property_energy_display">{faw-bolt}     Energy Rating:  %1$s</string>
+    <string name="property_yearbuilt_display">{faw-calendar}    Date Built:  %1$s</string>
+    <string name="share_icon_title">Share</string>
+
+
+    <!-- Info Screen -->
+    <string name="info_page_title">Info</string>
+
+
+    <!-- Premium screen -->
+    <string name="premium_title">Go Premium</string>
+    <string name="premium_purchase">  GO PREMIUM  </string>
+    <string name="premium_noads">No Ads</string>
+
+
+    <!-- settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="pref_enable_push_notifications_title">Push Notifications</string>
+    <string name="pref_enable_push_notifications_summery">Enable to receive important news.</string>
+
+
+    <!-- preference save key (to save favorites and shopping list in user phone) -->
+    <string name="save_preference_name">estate_app</string>
+
+
+    <!-- Internet error -->
+    <string name="no_internet_error_title">No Internet</string>
+    <string name="no_internet_error">No Internet Detected. Please turn on your Wifi</string>
+
+
+    <!--SHARE-->
+    <string name="share_message">Check out this property:</string>
+
+
+    <!--RATE-->
+    <!-- link is created automatically from package. Make sure package id is the same as the one used in google play -->
+    <string name="unable_to_reach_market">Error reaching market. Please check your internet connection</string>
+    <integer name="rate_shows_after_X_starts">5</integer>
+    <string name="rate_title">Please Rate us</string>
+    <string name="rate_text">If you like the app, feel free to leave a good rating.</string>
+
+
+    <!-- Alert -->
+    <string name="Alert_accept">OK</string>
+    <string name="Alert_cancel">Cancel</string>
+
+
+    <!--Agent/owner email-->
+    <string name="email_no_email">There are no email clients installed.</string>
+    <string name="email_send_email">Send email...</string>
+
+
+    <!-- Admob App Id sample app id: ca-app-pub-3940256099942544~3347511713-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!-- Admob ad unit ids - Get yours from Admob: https://www.google.com/admob/-->
+    <string name="interstitial_ad"></string>
+    <integer name="ad_shows_after_X_clicks">5</integer>
+    <string name="banner_ad"></string>
+
+
+    <!--Google Maps Key - get your key from here: https://developers.google.com/maps/documentation/javascript/get-api-key-->
+    <string name="GoogleMapKey"></string>
+
+
+    <!--Deep Link Sharing url - This url does 2 features:-->
+    <!--1) It is the link shared when the share button is pressed, along with the property id-->
+    <!--2) The app will listen for this url, so when it is opened the app will open.-->
+    <string name="deep_link">estate.neurondigital.com</string>
+    <string name="title_activity_add_appartment">AddAppartmentActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
